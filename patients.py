@@ -6,7 +6,7 @@ import sys
 from library import Person, Grup  # Import Person and Grup from library.py
 
 app = QtWidgets.QApplication([])
-win = uic.loadUi("пациенты.ui")
+win = uic.loadUi("patients.ui")
 
 Gr = Grup()  # Create a Grup object
 Gr.read_data_from_file("text.txt")  # Read data from the file
@@ -22,6 +22,17 @@ def btnLoadTable():
         win.tableWidget.setItem(row, 3, QTableWidgetItem(str(Gr.A[x].hospital_days)))  # Convert hospital_days to a string
         row += 1
 
-win.pushButton.clicked.connect(btnLoadTable)  # Connect the button to the function
+
+def btnAppendEmployee():
+    strEmployee = win.lineEdit.text()
+    Gr.appendEmployee(strEmployee)
+    win.lineEdit.clear()
+    win.tableWidget.clear()
+    btnLoadTable()
+
+win.pushButton.clicked.connect(btnLoadTable) 
+
+win.pushButton_3.clicked.connect(btnAppendEmployee)
+
 win.show()
 sys.exit(app.exec_())

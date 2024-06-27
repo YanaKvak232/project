@@ -9,21 +9,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>844</width>
-    <height>446</height>
+    <width>1111</width>
+    <height>394</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Список пациентов</string>
+   <string>список пациентов</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>841</width>
-      <height>201</height>
+      <x>190</x>
+      <y>-10</y>
+      <width>881</width>
+      <height>341</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -37,9 +37,15 @@
       <rect>
        <x>0</x>
        <y>10</y>
-       <width>851</width>
-       <height>201</height>
+       <width>891</width>
+       <height>231</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua</family>
+       <pointsize>10</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -48,7 +54,7 @@
       <enum>QFrame::Sunken</enum>
      </property>
      <property name="rowCount">
-      <number>5</number>
+      <number>0</number>
      </property>
      <property name="columnCount">
       <number>4</number>
@@ -57,13 +63,8 @@
       <bool>true</bool>
      </attribute>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>168</number>
+      <number>220</number>
      </attribute>
-     <row/>
-     <row/>
-     <row/>
-     <row/>
-     <row/>
      <column>
       <property name="text">
        <string>ФИО</string>
@@ -76,7 +77,7 @@
      </column>
      <column>
       <property name="text">
-       <string>Заболевание</string>
+       <string>Заболевания</string>
       </property>
      </column>
      <column>
@@ -85,15 +86,39 @@
       </property>
      </column>
     </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>280</y>
+       <width>821</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Perpetua</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>310</y>
+      <x>0</x>
+      <y>0</y>
       <width>191</width>
-      <height>81</height>
+      <height>111</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>Очистить таблицу</string>
@@ -102,14 +127,43 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>310</y>
-      <width>201</width>
-      <height>81</height>
+      <x>0</x>
+      <y>120</y>
+      <width>191</width>
+      <height>111</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Считать данные</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>191</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
     </property>
    </widget>
   </widget>
@@ -118,7 +172,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>844</width>
+     <width>1111</width>
      <height>21</height>
     </rect>
    </property>
